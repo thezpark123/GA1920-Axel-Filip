@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<form action=""></form>
+<form action="../newPost.php"></form>
 
 </body>
 </html>
