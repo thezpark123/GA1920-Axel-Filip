@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56201eca-9c22-4fdc-a71d-91878e350050" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ac4086f2-8951-4420-8bb5-dcbe4a9dbe59.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.view.php" afterDir="false" />
     </list>
@@ -103,16 +102,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:db.sqlite" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:db.sqlite" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@adb752a" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:db.sqlite" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@1ca8e1c2" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -134,7 +123,7 @@
       <workItem from="1578565885857" duration="16000" />
       <workItem from="1579165472123" duration="4030000" />
       <workItem from="1579525136513" duration="29000" />
-      <workItem from="1579695744317" duration="126000" />
+      <workItem from="1579695744317" duration="815000" />
     </task>
     <servers />
   </component>
@@ -155,21 +144,21 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="619" height="274" key="GridCell.Tab.0.bottom" timestamp="1579695751122">
+    <state width="619" height="274" key="GridCell.Tab.0.bottom" timestamp="1579695953675">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="619" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579695751122" />
-    <state width="619" height="274" key="GridCell.Tab.0.center" timestamp="1579695751122">
+    <state width="619" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579695953675" />
+    <state width="619" height="274" key="GridCell.Tab.0.center" timestamp="1579695953675">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="619" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579695751122" />
-    <state width="619" height="274" key="GridCell.Tab.0.left" timestamp="1579695751122">
+    <state width="619" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579695953675" />
+    <state width="619" height="274" key="GridCell.Tab.0.left" timestamp="1579695953675">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="619" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579695751122" />
-    <state width="619" height="274" key="GridCell.Tab.0.right" timestamp="1579695751122">
+    <state width="619" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579695953675" />
+    <state width="619" height="274" key="GridCell.Tab.0.right" timestamp="1579695953675">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="619" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579695751122" />
+    <state width="619" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579695953675" />
   </component>
 </project>

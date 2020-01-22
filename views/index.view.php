@@ -18,6 +18,7 @@
 
         <div class="card">
             <div class="card-text"><?= $post["caption"]?></div>
+            <p>hej</p>
         </div>
 
     <?php
