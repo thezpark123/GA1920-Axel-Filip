@@ -10,8 +10,8 @@
 <body>
 <div class="wrapper">
 
-    <?php require "db.php"
-    $posts =getAll($_GET);
+    <?php require "db.php";
+    $posts = getAll($_GET);
 
     foreach ($posts as $post){
     ?>
