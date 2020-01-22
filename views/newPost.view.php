@@ -8,23 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-<div class="wrapper">
 
-    <?php require "../db.php";
-    $posts = getAll($_GET);
+<form action="../newPost.php"></form>
 
-    foreach ($posts as $post){
-    ?>
-
-        <div class="card">
-            <div class="card-text"><?= $post["caption"]?></div>
-            <p>hej</p>
-        </div>
-
-    <?php
-    }
-    ?>
-
-</div>
 </body>
 </html>
