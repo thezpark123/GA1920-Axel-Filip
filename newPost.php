@@ -3,4 +3,4 @@ require "db.php";
 
 newPost($_POST);
 
-header("location: /storePost");
+//header("location: /storePost");
