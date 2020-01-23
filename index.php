@@ -3,7 +3,7 @@
 require "vendor/autoload.php";
 
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
-    $r->addRoute('GET', '/', 'views/home.php');
+    $r->addRoute('GET', '/home', 'views/home.php');
 
 });
 
