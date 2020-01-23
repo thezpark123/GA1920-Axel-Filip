@@ -3,7 +3,7 @@
 require "vendor/autoload.php";
 
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
-    $r->addRoute('GET', '/', 'home.php');
+    $r->addRoute('GET', '/', 'views/home.php');
 
 });
 
@@ -20,7 +20,7 @@ $uri = rawurldecode($uri);
 $routeInfo = $dispatcher->dispatch($httpMethod, $uri);
 switch ($routeInfo[0]) {
     case FastRoute\Dispatcher::NOT_FOUND:
-        require "home.php";
+        require "views/home.php";
         // ... 404 Not Found
         break;
     case FastRoute\Dispatcher::METHOD_NOT_ALLOWED:
