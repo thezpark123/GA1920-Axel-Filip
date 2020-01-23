@@ -4,6 +4,8 @@ require "vendor/autoload.php";
 
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/home', 'views/home.php');
+    $r->addRoute('POST', '/storePost', 'newPost.php');
+    $r->addRoute('GET', '/newPost', 'views/newPost.view.php');
 
 });
 
@@ -20,7 +22,7 @@ $uri = rawurldecode($uri);
 $routeInfo = $dispatcher->dispatch($httpMethod, $uri);
 switch ($routeInfo[0]) {
     case FastRoute\Dispatcher::NOT_FOUND:
-        require "views/home.php";
+        require "404.php";
         // ... 404 Not Found
         break;
     case FastRoute\Dispatcher::METHOD_NOT_ALLOWED:
