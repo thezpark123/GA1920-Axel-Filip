@@ -8,20 +8,19 @@
     <title>Home</title>
 </head>
 <body>
+<h1>topmeme</h1>
 <div class="wrapper">
 
-    <?php
-    require "db.php";
-    $options = $_POST;
-    $posts = getAll($options);
-    var_dump($options);
-
+    <?php require "db.php";
+    $posts = getAll($_GET);
+    var_dump($_GET);
+    
     foreach ($posts as $post){
     ?>
 
         <div class="card">
             <div class="card-text"><?= $post["caption"]?></div>
-            <p>hej</p>
+
         </div>
 
     <?php
