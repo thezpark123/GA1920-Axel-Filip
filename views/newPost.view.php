@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<form action="storePost">
+<form action="storePost" method="post">
     <div class="form-group">
         <label for="caption">Enter caption</label>
         <input type="text" name="caption" id="caption">
@@ -20,7 +20,7 @@
         <input type="text" name="img" id="img">
     </div>
 
-    <button id="submit-btn" type="submit" value="Share your post">Share</button>
+    <button id="submit-btn" type="submit" value="add new post">Share</button>
 </form>
 
 </body>
