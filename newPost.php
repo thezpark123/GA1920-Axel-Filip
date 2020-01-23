@@ -2,5 +2,4 @@
 require "db.php";
 
 newPost($_POST);
-
-//header("location: /storePost");
+var_dump($_POST);
