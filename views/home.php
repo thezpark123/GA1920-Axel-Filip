@@ -12,8 +12,8 @@
 <div class="wrapper">
 
     <?php require "db.php";
-    $posts = getAll($_GET);
-    var_dump($_GET);
+    $options = $_POST;
+    $posts = getAll($options);
     
     foreach ($posts as $post){
     ?>
