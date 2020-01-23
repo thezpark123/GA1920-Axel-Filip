@@ -2,5 +2,6 @@
 require "db.php";
 
 newPost($_POST);
+var_dump($_POST);
 
-header("location: /storePost");
+header("location: /home");
