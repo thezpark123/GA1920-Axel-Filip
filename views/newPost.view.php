@@ -9,18 +9,18 @@
 </head>
 <body>
 
-<form action="storePost" method="post">
+<form action="uploads" method="post" enctype="multipart/form-data">
     <div class="form-group">
-        <label for="caption">Enter caption</label>
+        <label for="img"></label>
+        <input type="file" name="img" id="img">
+    </div>
+
+    <div class="form-group">
+        <label for="caption">Enter Caption</label>
         <input type="text" name="caption" id="caption">
     </div>
 
-    <div class="form-group">
-        <label for="img">placeholder</label>
-        <input type="text" name="img" id="img">
-    </div>
-
-    <button id="submit-btn" type="submit" value="add new post">Share</button>
+    <button id="submit-btn" type="submit">Share</button>
 </form>
 
 </body>

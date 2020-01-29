@@ -5,7 +5,7 @@ require "vendor/autoload.php";
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/home', 'views/home.php');
     $r->addRoute('GET', '/newPost', 'views/newPost.view.php');
-    $r->addRoute('POST', '/storePost', 'newPost.php');
+    $r->addRoute('POST', '/uploads', 'uploads.php');
 
 });
 

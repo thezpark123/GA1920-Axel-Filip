@@ -18,12 +18,12 @@ if (isset($_POST['submit'])){
         if ($fileError === 0){
             if ($fileSize < 500000){
                 $fileNameNew = uniqid('', true).".".$fileActualExt;
-                $fileDestination = 'storePost/'.$fileNameNew;
+                $fileDestination = 'storePost'.$fileNameNew;
                 move_uploaded_file($fileTmpName, $fileDestination);
                 header("location: /home");
             }  else{
                 echo "Your file is too big!"
-;            }
+                ;            }
         }
         else {
             echo "There was an error uploading your file!";
@@ -33,7 +33,3 @@ if (isset($_POST['submit'])){
         echo "You can not upload this type of file!";
     }
 }
-
-/*newPost($_POST);
-var_dump($_POST);
-*/
