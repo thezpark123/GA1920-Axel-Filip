@@ -1,6 +1,7 @@
 <?php
 require "db.php";
 
+<<<<<<< HEAD
 if (isset($_POST['submit'])){
     $file = $_FILES['img'];
 
@@ -37,3 +38,7 @@ if (isset($_POST['submit'])){
 /*newPost($_POST);
 var_dump($_POST);
 */
+=======
+newPost($_POST);
+var_dump($_POST);
+>>>>>>> cbec98d22b91f6851295e9f25252e33266ad1653
