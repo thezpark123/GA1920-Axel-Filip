@@ -14,7 +14,7 @@
 <nav class="navbar navbar-light bg-black">
     <img src="../Assets/topMeme-logo.jpg" width="150" height="28" class="d-inline-block align-top" alt="">
     <a class="navbar-brand" id ="nav-text" href="newPost">Upload</a>
-    <a class="navbar-brand" id ="nav-text" href="uploads">temp delete</a>
+    <a class="navbar-brand" id ="nav-text-2" href="delete">temp delete</a>
 
 </nav>
 
