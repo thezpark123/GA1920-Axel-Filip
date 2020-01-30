@@ -9,8 +9,12 @@ body{
  background-color: black;
 }
 
-#wrapper{
-    color: red;
+body {
+    background-color: rgb(50,50,50) !important;
+}
+
+.card{
+    margin: 50px;
 }
 
 #nav-text{
