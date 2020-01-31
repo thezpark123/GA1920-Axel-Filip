@@ -68,6 +68,7 @@ function newPost($data){
         return $success;
 }
 
+
 function uploadFiles(){
     if (isset($_POST['submit'])){
         $file = $_FILES['img'];
@@ -101,5 +102,12 @@ function uploadFiles(){
             echo "You can not upload this type of file!";
         }
     }
+}
+
+function getPost($id)
+{
+    $query = "SELECT * FROM posts WHERE id='$id'";
+    $success = runQuery($query);
+    return $success;
 
 }
