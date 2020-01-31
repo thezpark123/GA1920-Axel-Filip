@@ -1,11 +1,12 @@
-body{
-    background-color: black;
+img {
+    display: block;
 }
-#jumbo{
+
+#jumbo {
     background-color: black;
 }
 
-.bg-black{
+.bg-black {
  background-color: black;
 }
 
@@ -13,19 +14,20 @@ body {
     background-color: rgb(50,50,50) !important;
 }
 
-.card{
+.card {
     margin: 50px;
 }
 
-#nav-text{
+#nav-text {
     color: #1593CD;
 }
 
 
-#nav-text-2{
+#nav-text-2 {
     color:#F6B237;
 }
 
 #read-caption {
     color: white;
+    margin-left: 4%;
 }
