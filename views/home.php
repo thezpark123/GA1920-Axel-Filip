@@ -27,10 +27,11 @@
     foreach ($posts as $post){
     ?>
 
+        <a href="read.php?readPost=<?= $post['id'] ?>">
         <div class="card">
             <img src="../Assets/topMeme.png"  class="card-img-top" alt="...">
             <div class="card-title"><?= $post["caption"]?></div>
-
+        </a>
         </div>
 
     <?php

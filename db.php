@@ -18,7 +18,6 @@ function connect(){
 
 function runQuery($query){
     $db = connect();
-    var_dump($query);
     $stmt = $db->prepare($query);
     $stmt->execute();
     $result = $stmt->fetchAll();
