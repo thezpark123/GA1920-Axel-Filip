@@ -67,3 +67,10 @@ function newPost($data){
         $success = runQuery($query);
         return $success;
 }
+
+function getPost($id)
+{
+    $query = "SELECT * FROM posts WHERE id='$id'";
+    $success = runQuery($query);
+    return $success;
+}
