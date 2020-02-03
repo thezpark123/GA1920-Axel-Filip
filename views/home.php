@@ -32,15 +32,15 @@
         <div class="card">
             <img src="../Assets/topMeme.png"  class="card-img-top" alt="...">
         </a>
-            <div class="card-title"><?= $post["caption"]?> <br> <a href="edit.php?editPost=<?= $post['id'] ?>" class="btn">Redigera</a></div>
+    <div class="card-bot">
+            <div class="card-title"> <?= $post["caption"]?> </div>
+        <div class="edit-card">  <a href="edit.php?editPost=<?= $post['id'] ?>" class="btn">Redigera</a> </div>
         </div>
-
-
+</div>
 
     <?php
     }
     ?>
-
 
 </body>
 </html>

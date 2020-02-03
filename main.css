@@ -31,3 +31,21 @@ body {
     color: white;
     margin-left: 4%;
 }
+
+.card-bot {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas:
+    "title . . . . edit"
+    ;
+}
+
+.card-title {
+    grid-area: title;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
+.edit-card {
+    grid-area: edit;
+}
