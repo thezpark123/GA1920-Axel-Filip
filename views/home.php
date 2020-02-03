@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+ <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
 </head>
+
 <body>
 
 <nav class="navbar navbar-light bg-black">
@@ -30,14 +31,16 @@
         <a href="read.php?readPost=<?= $post['id'] ?>">
         <div class="card">
             <img src="../Assets/topMeme.png"  class="card-img-top" alt="...">
-            <div class="card-title"><?= $post["caption"]?></div>
         </a>
+            <div class="card-title"><?= $post["caption"]?> <br> <a href="edit.php?editPost=<?= $post['id'] ?>" class="btn">Redigera</a></div>
         </div>
+
+
 
     <?php
     }
     ?>
 
-</div>
+
 </body>
 </html>

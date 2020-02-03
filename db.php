@@ -110,3 +110,14 @@ function getPost($id)
     return $success;
 
 }
+
+function updatePost($data, $getId)
+{
+    $id = $getId['updatePost'];
+    $caption = $data['caption'] ?? null;
+
+    $query = "UPDATE posts SET caption='$caption' WHERE id=$id";
+
+    $success = runQuery($query);
+    return $success;
+}
