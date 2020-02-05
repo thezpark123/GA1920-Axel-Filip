@@ -49,7 +49,6 @@ if ($options["caption"] ?? null){
 }
 
 function newPost($data){
-        var_dump($data);
         $result = runQuery("SELECT MAX(id) FROM posts");
         $id = $result[0]['MAX(id)']+1;
         $caption = $data['caption'] ?? null;
