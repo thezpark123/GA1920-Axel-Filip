@@ -66,7 +66,12 @@ function newPost($data){
         return $success;
 }
 
-
+function getPost($id)
+{
+    $query = "SELECT * FROM posts WHERE id ='$id'";
+    $success = runQuery($query);
+    return $success;
+}
 
 function updatePost($data, $getId)
 {
@@ -78,3 +83,4 @@ function updatePost($data, $getId)
     $success = runQuery($query);
     return $success;
 }
+
