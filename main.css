@@ -18,6 +18,31 @@ body {
     margin: 50px;
 }
 
+.card-bot {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas:
+            "title title title title title edit";
+}
+
+.card-title {
+    grid-area: title;
+    margin-left: 4%;
+    margin-top: 1%;
+}
+
+.edit-card {
+    grid-area: edit;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas:
+            ". cap cap cap cap ."
+            "post post post post post post";
+}
+
 #nav-text {
     color: #1593CD;
 }
@@ -29,23 +54,9 @@ body {
 
 #read-caption {
     color: white;
-    margin-left: 4%;
+    grid-area: cap;
 }
 
-.card-bot {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-areas:
-    "title title title title title edit"
-    ;
-}
-
-.card-title {
-    grid-area: title;
-    margin-left: 4%;
-    margin-top: 1%;
-}
-
-.edit-card {
-    grid-area: edit;
+#post-img {
+    grid-area: post;
 }
