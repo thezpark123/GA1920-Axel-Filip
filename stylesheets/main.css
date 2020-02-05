@@ -1,0 +1,24 @@
+img {
+    display: block;
+}
+
+#jumbo {
+    background-color: black;
+}
+
+.bg-black {
+ background-color: black;
+}
+
+body {
+    background-color: rgb(50,50,50) !important;
+}
+
+#nav-text {
+    color: #1593CD;
+}
+
+
+#nav-text-2 {
+    color:#F6B237;
+}
