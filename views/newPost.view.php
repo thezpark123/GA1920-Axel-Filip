@@ -12,10 +12,10 @@
 </head>
 <body>
 
-<form action="uploads" method="post" enctype="multipart/form-data">
+<form action="upload" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <label for="img"></label>
-        <input type="file" name="img" id="img">
+        <input type="file" name="file" id="img">
     </div>
 
     <div class="form-group">
@@ -23,7 +23,7 @@
         <input type="text" name="caption" id="caption">
     </div>
 
-    <button id="submit-btn" type="submit">Share</button>
+    <button id="submit-btn" name="submit" type="submit">Share</button>
 </form>
 
 </body>

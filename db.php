@@ -67,7 +67,7 @@ function newPost($data){
         $success = runQuery($query);
         return $success;
 }
-
+/*
 function uploadFiles(){
     if (isset($_POST['submit'])){
         $file = $_FILES['img'];
@@ -75,7 +75,7 @@ function uploadFiles(){
         $fileName = $_FILES['img']['name'];
         $fileTmpName = $_FILES['img']['tmp_name'];
         $fileSize = $_FILES['img']['size'];
-        $fileError = $_FILES['img']['type'];
+        $fileError = $_FILES['img']['error'];
         $fileType = $_FILES['img']['Type'];
 
         $fileExt = explode('.', $fileName);
@@ -103,3 +103,4 @@ function uploadFiles(){
     }
 
 }
+*/
