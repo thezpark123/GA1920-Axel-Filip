@@ -1,9 +1,9 @@
 <?php
 require "db.php";
-
+require "upload.php";
 
 newPost($_POST);
-var_dump($_POST);
+
 
 header("Location: /home");
 
