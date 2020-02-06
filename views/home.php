@@ -31,7 +31,9 @@
 
         <a href="read.php?readPost=<?= $post['id'] ?>">
         <div class="card">
-            <img src="../Assets/topMeme.png"  class="card-img-top" alt="...">
+            <div>
+            <img src="<?= $post['img']?>" class="card-img-top" alt="...">
+            </div>
         </a>
     <div class="card-bot">
             <div class="card-title"> <?= $post["caption"]?> </div>
