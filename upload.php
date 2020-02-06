@@ -1,5 +1,4 @@
 <?php
-var_dump($_POST);
 if(isset($_POST["submit"])) {
     $file = $_FILES['file'];
     $fileName = $_FILES['file']['name'];
@@ -14,12 +13,11 @@ if(isset($_POST["submit"])) {
     $allowed = array('jpg', 'jpeg', 'png', 'gif');
     if (in_array($fileActualExt, $allowed)) {
         if ($fileError === 0) {
-            if ($fileSize < 500000) {
+            if ($fileSize < 5000000) {
                 $fileNameNew = uniqid('', true) . "." . $fileActualExt;
                 $fileDestination = 'uploads/' . $fileNameNew;
                 move_uploaded_file($fileTmpName, $fileDestination);
                header("Location: home");
-                var_dump($fileNameNew);
             } else {
                 echo "Your file is too big!";
             }
@@ -30,7 +28,3 @@ if(isset($_POST["submit"])) {
         echo "You can not upload this type of file!";
     }
 }
-
-// var_dump($fileNameNew);
-// var_dump($fileDestination);
-// var_dump($allowed);
