@@ -20,6 +20,6 @@
 </head>
 <body>
 <p>Tryck på 404 bilden för att gå tillbaka till startsidan</p>
-<a href="home.php"><img src="./assets/404.png" alt="404"></a>
+<a href="/home"><img src="./Assets/404.png" alt="404"></a>
 </body>
 </html>
