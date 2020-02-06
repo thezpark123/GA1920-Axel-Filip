@@ -28,7 +28,7 @@ $post = getPost($_GET["readPost"]);
 
 <div class="grid-container">
     <h2 id="read-caption"><?= $post[0]['caption'] ?></h2>
-    <img id="post-img" src="Assets/topMeme.png" alt="placeholder">
+    <img id="post-img" src=<?= "uploads/" . $post[0]['img']?> class="card-img-top" alt="the-post">
 </div>
 
 </body>
