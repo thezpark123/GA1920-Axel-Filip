@@ -55,7 +55,6 @@ function newPost($data){
         $img = $data['img'] ?? null;
 
 
-
         $query = "INSERT INTO posts VALUES (
                               $id,
                               '$caption',
