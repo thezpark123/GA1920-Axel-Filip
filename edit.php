@@ -29,10 +29,13 @@ $post = getPost($_GET["editPost"]);
     <a class="navbar-brand" id ="nav-text-2" href="delete">temp delete</a>
 </nav>
 
+<br>
+
 <form action="update.php?updatePost=<?= $_GET['editPost'] ?>" method="post" enctype="multipart/form-data">
 
-    <div class="form-group">
-        <label for="caption"><p>Enter Caption</p></label>
+    <div class="form-group captionUpload">
+        <label for="caption">Enter Caption</label>
+        <br>
         <input type="text" name="caption" id="caption" value="<?= $post[0]['caption'] ?>">
     </div>
 

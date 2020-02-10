@@ -1,25 +1,23 @@
-body {
+
+form {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(8,1fr);
     grid-template-areas:
-    "nav nav nav nav"
-    ". cap cap ."
-    ". img img ."
-    ". . submit .";
+". . . img img . . ."
+". . . caption caption . . ."
+". . . . . share . .";
 }
 
-nav {
-    grid-area: nav;
-}
-
-#img {
+.imgUpload {
     grid-area: img;
 }
 
-#caption {
-    grid-area: cap;
+.captionUpload {
+    grid-area: caption;
 }
 
 #submit-btn {
-    grid-area: submit;
+    grid-area: share;
+    width: 60px;
+    height: 40px;
 }
