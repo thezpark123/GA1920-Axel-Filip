@@ -1,0 +1,25 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:
+    "nav nav nav nav"
+    ". cap cap ."
+    ". img img ."
+    ". . submit .";
+}
+
+nav {
+    grid-area: nav;
+}
+
+#img {
+    grid-area: img;
+}
+
+#caption {
+    grid-area: cap;
+}
+
+#submit-btn {
+    grid-area: submit;
+}

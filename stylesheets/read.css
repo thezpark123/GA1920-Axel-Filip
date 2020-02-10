@@ -1,13 +1,13 @@
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(12,1fr);
     grid-template-areas:
-            ". cap cap cap cap ."
-            "post post post post post post";
+            ". cap cap cap cap cap cap cap cap cap cap ."
+            ". post post post post post post post post post post .";
 }
 
 #read-caption {
-    color: white;
+    color: #ffffff;
     grid-area: cap;
 }
 
