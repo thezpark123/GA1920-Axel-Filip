@@ -32,7 +32,7 @@
         <a href="/views/read.php?readPost=<?= $post['id'] ?>">
         <div class="card">
             <div>
-            <img src=<?= "uploads/" . $post['img']?> class="card-img-top" alt="the-post">
+            <img src=<?= "../uploads/" . $post['img']?> class="card-img-top" alt="the-post">
             </div>
         </a>
     <div class="card-bot">
