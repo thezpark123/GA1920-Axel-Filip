@@ -1,5 +1,5 @@
 <?php
-require "db.php";
+require "../db.php";
 $post = getPost($_GET["editPost"]);
 ?>
 
@@ -12,9 +12,9 @@ $post = getPost($_GET["editPost"]);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> <?= $post[0]['caption'] ?> </title>
     <link rel="stylesheet" href="../stylesheets/main.css">
-    <link rel="stylesheet" href="stylesheets/main.css">
-    <link rel="stylesheet" href="stylesheets/form.css">
-    <link rel="icon" href="./Assets/topMeme-icon.png">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/form.css">
+    <link rel="icon" href="../Assets/topMeme-icon.png">
 
     <style>
         p {
@@ -33,7 +33,7 @@ $post = getPost($_GET["editPost"]);
 
 <br>
 
-<form action="update.php?updatePost=<?= $_GET['editPost'] ?>" method="post" enctype="multipart/form-data">
+<form action="/update.php?updatePost=<?= $_GET['editPost'] ?>" method="post" enctype="multipart/form-data">
 
     <div class="form-group captionUpload">
         <label for="caption">Enter Caption</label>

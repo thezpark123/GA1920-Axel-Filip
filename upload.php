@@ -30,7 +30,7 @@ if(isset($_POST["submit"])) {
 }
 
 
-require "db.php";
+require "./db.php";
 newPost($_POST,$fileNameNew);
 
 header("Location: /home");
