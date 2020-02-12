@@ -1,0 +1,23 @@
+
+form {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-areas:
+". . . img img . . ."
+". . . caption caption . . ."
+". . . . . share . .";
+}
+
+.imgUpload {
+    grid-area: img;
+}
+
+.captionUpload {
+    grid-area: caption;
+}
+
+#submit-btn {
+    grid-area: share;
+    width: 60px;
+    height: 40px;
+}

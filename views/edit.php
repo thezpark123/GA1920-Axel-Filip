@@ -8,10 +8,14 @@ $post = getPost($_GET["editPost"]);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> <?= $post[0]['caption'] ?> </title>
     <link rel="stylesheet" href="../stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/form.css">
+    <link rel="icon" href="./Assets/topMeme-icon.png">
+
     <style>
         p {
             color: white;
@@ -27,16 +31,18 @@ $post = getPost($_GET["editPost"]);
     <a class="navbar-brand" id ="nav-text-2" href="../index.php">temp delete</a>
 </nav>
 
-<form action="../update.php?updatePost=<?= $_GET['editPost'] ?>" method="post" enctype="multipart/form-data">
+<br>
 
-    <div class="form-group">
-        <label for="caption"><p>Enter Caption</p></label>
+<form action="update.php?updatePost=<?= $_GET['editPost'] ?>" method="post" enctype="multipart/form-data">
+
+    <div class="form-group captionUpload">
+        <label for="caption">Enter Caption</label>
+        <br>
         <input type="text" name="caption" id="caption" value="<?= $post[0]['caption'] ?>">
     </div>
 
     <button id="submit-btn" type="submit">Edit</button>
 </form>
-
 </body>
 </html>
 
