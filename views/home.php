@@ -39,7 +39,7 @@
     foreach ($posts as $post){
     ?>
 
-        <a href="/views/read.php?readPost=<?= $post['id'] ?>">
+        <a href="<?= "/views/read.php?readPost=" . $post['id'] ?>">
         <div class="card">
             <div>
             <img src=<?= "../uploads/" . $post['img']?> class="card-img-top" alt="the-post">
