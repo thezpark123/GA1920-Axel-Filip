@@ -14,7 +14,7 @@ body {
     background-color: rgb(50,50,50) !important;
 }
 
-#nav-text {
+#nav-text, #signUp-btn {
     color: #1593CD;
 }
 
