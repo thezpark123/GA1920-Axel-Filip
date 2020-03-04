@@ -12,15 +12,8 @@ $post = getPost($_GET["editPost"]);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> <?= $post[0]['caption'] ?> </title>
     <link rel="stylesheet" href="../stylesheets/main.css">
-    <link rel="stylesheet" href="/stylesheets/main.css">
     <link rel="stylesheet" href="/stylesheets/form.css">
     <link rel="icon" href="../Assets/topMeme-icon.png">
-
-    <style>
-        p {
-            color: white;
-        }
-    </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
