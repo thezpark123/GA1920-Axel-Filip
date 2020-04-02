@@ -1,8 +1,3 @@
-<?php
-require "../db.php";
-$post = getPost($_GET["editPost"]);
-?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -36,26 +31,3 @@ $post = getPost($_GET["editPost"]);
     </nav>
 
 </div>
-
-
-<nav class="navbar navbar-light bg-black">
-    <a href="../home"><img src="../Assets/topMeme-logo.jpg" width="150" height="28" class="d-inline-block align-top" alt="site-logo"></a>
-    <a class="navbar-brand" id ="nav-text" href="../newPost">Upload</a>
-    <a class="navbar-brand" id ="nav-text-2" href="../#">temp delete</a>
-</nav>
-
-<br>
-
-<form action="/update.php?updatePost=<?= $_GET['editPost'] ?>" method="post" enctype="multipart/form-data">
-
-    <div class="form-group captionUpload">
-        <label for="caption">Enter Caption</label>
-        <br>
-        <input type="text" name="caption" id="caption" value="<?= $post[0]['caption'] ?>">
-    </div>
-
-    <button id="submit-btn" type="submit">Edit</button>
-</form>
-</body>
-</html>
-
