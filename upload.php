@@ -7,7 +7,7 @@ if(isset($_POST["submit"])) {
     $fileError = $_FILES['file']['error'];
     $fileSize = $_FILES['file']['size'];
 
-    $fileExt=explode('.', $fileName);
+    $fileExt = explode('.', $fileName);
     $fileActualExt = strtolower(end($fileExt));
 
     $allowed = array('jpg', 'jpeg', 'png', 'gif');
@@ -31,6 +31,6 @@ if(isset($_POST["submit"])) {
 
 
 require "./db.php";
-newPost($_POST,$fileNameNew);
+newPost($_POST, $fileNameNew);
 
 header("Location: /home");
