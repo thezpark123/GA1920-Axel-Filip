@@ -6,7 +6,6 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/home', 'views/home.php');
     $r->addRoute('GET', '/newPost', 'views/newPost.view.php');
     $r->addRoute('POST', '/upload', 'upload.php');
-    $r->addRoute('GET', '/signup', 'login/signup.php');
     $r->addRoute('GET', '/post', 'newPost.php');
 
 });
