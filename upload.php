@@ -13,11 +13,15 @@ if(isset($_POST["submit"])) {
     $allowed = array('jpg', 'jpeg', 'png', 'gif');
     if (in_array($fileActualExt, $allowed)) {
         if ($fileError === 0) {
-            if ($fileSize < 5000000) {
+            if ($fileSize < 1000000) {
                 $fileNameNew = uniqid('', true) . "." . $fileActualExt;
                 $fileDestination = 'uploads/' . $fileNameNew;
                 move_uploaded_file($fileTmpName, $fileDestination);
 
+                require "./db.php";
+                newPost($_POST, $fileNameNew);
+
+                header("Location: /home");
             } else {
                 echo "Your file is too big!";
             }
@@ -29,8 +33,3 @@ if(isset($_POST["submit"])) {
     }
 }
 
-
-require "./db.php";
-newPost($_POST, $fileNameNew);
-
-header("Location: /home");
